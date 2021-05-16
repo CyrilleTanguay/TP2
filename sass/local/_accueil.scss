@@ -26,7 +26,7 @@ body.home::after{
     #primary {
         width: 100vw;
         margin : 0;
-
+background-color: rgb(207, 234, 251);
         header {
            
             text-align: center;
@@ -76,6 +76,7 @@ Liste des blocs de cours par type_de_cours
         flex-direction: row;
         flex-wrap: wrap;
         article {
+            background-color: white;
             display : flex;
             flex-direction: column;
             justify-content: space-between;

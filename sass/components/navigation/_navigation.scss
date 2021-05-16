@@ -10,7 +10,7 @@
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
-		background-color: #000;
+		background-color: darkblue;
 		text-align : left;
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -110,7 +110,26 @@ Bouton burger
 .menu-toggle:active {
     transform: scale(0.99);
 }
+button{
+#un{
+    color: turquoise;
+        }
+        #deux{
+            background-color: #ff9d00;
+        }
+        #trois{
+            background-color: #00aeff;
+        }
+        #quatre{
+            background-color: red;
+       
+		}
+        #cinq{
+            background-color: #ffd000;
+        }
+    }
 
+        
 /*
 .main-navigation.toggled .menu-toggle{
 	transform : rotate(90deg);

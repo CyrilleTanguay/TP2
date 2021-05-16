@@ -31,11 +31,11 @@ get_header();
 				<div><a href="http://localhost:8080/TP2/category/web/">Web</a></div>
 				</section>
                 <div style="display: flex; justify-content:center;">
-				<button id='un'>I</button>
-				<button id='deux'>C</button>
-				<button id='trois'>J</button>
-				<button id='quatre'>S</button>
-				<button id='cinq'>W</button>
+				<button id='un' style="background-color:turquoise">I</button>
+				<button id='deux' style=" background-color: #ff9d00;">C</button>
+				<button id='trois' style="background-color: #00aeff;">J</button>
+				<button id='quatre' style="background-color: red;">S</button>
+				<button id='cinq' style="background-color: #ffd000;">W</button>
                 </div>
 				<?php endif ?>
 

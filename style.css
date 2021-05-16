@@ -389,7 +389,7 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
+  color: darkblue;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 1rem;
   line-height: 1.5;
@@ -540,7 +540,7 @@ a:hover, a:active {
 }
 
 .main-navigation a {
-  color: #ece395;
+  color: #1281ff;
 }
 
 .main-navigation a:visited {
@@ -560,7 +560,7 @@ a:hover, a:active {
 }
 
 .site-title a {
-  color: #0a2646;
+  color: #1281ff;
 }
 
 .site-title a:visited {
@@ -667,10 +667,13 @@ textarea {
   display: grid;
   grid-template-columns: 80% 20%;
   grid-template-areas: "header header" "main sidebar" "footer footer";
+  background-color: #cfeafb;
+  height: 100%;
 }
 
 .site-header {
   grid-area: header;
+  background-color: skyblue;
 }
 
 .site-main {
@@ -732,7 +735,7 @@ textarea {
   list-style: none;
   margin: 0;
   padding-left: 0;
-  background-color: #000;
+  background-color: darkblue;
   text-align: left;
   /* fin du sub-menu */
 }
@@ -816,6 +819,26 @@ Bouton burger
 
 .menu-toggle:active {
   transform: scale(0.99);
+}
+
+button #un {
+  color: turquoise;
+}
+
+button #deux {
+  background-color: #ff9d00;
+}
+
+button #trois {
+  background-color: #00aeff;
+}
+
+button #quatre {
+  background-color: red;
+}
+
+button #cinq {
+  background-color: #ffd000;
 }
 
 /*
@@ -1145,6 +1168,7 @@ body.home::after {
 .home #primary {
   width: 100vw;
   margin: 0;
+  background-color: #cfeafb;
 }
 
 .home #primary header {
@@ -1192,6 +1216,7 @@ Liste des blocs de cours par type_de_cours
 }
 
 .home .cours section.bloc article {
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1266,7 +1291,7 @@ Liste des blocs de cours par type_de_cours
 }
 
 .carrousel div:nth-of-type(1) {
-  background-color: #00ff37;
+  background-color: turquoise;
 }
 
 .carrousel div:nth-of-type(2) {
@@ -1541,7 +1566,7 @@ La barre du millieu
 }
 
 .galerie .flip-card-front {
-  background-color: #bbb;
+  background-color: white;
   color: black;
 }
 
@@ -1549,6 +1574,7 @@ La barre du millieu
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+  list-style: none;
 }
 
 .galerie article {
@@ -1560,7 +1586,9 @@ La barre du millieu
   display: block;
   position: relative;
   padding: 0;
-  list-style: n;
+  list-style: none;
+  color: white;
+  list-style: none;
 }
 
 .galerie article a img {

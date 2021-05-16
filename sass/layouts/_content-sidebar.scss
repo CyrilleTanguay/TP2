@@ -6,10 +6,13 @@
 		"header header"
 		"main sidebar"
 		"footer footer";
+		background-color: #cfeafb;
+		height: 100%;
 }
 
 .site-header {
 	grid-area: header;
+	background-color: skyblue;
 }
 
 .site-main {
