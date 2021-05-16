@@ -1250,7 +1250,7 @@ Liste des blocs de cours par type_de_cours
 /* local carrousel
 --------------------------------------------- */
 .carrousel {
-  width: 300vw;
+  width: 100vw;
   height: 20vh;
   display: flex;
   transition: transform .5s;

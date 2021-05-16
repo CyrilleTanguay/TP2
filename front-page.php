@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-	<main id="primary" class="site-main" style="margin-left: 20px;margin-right:20px;">
+	<main id="primary" class="site-main">
 	
 
 
