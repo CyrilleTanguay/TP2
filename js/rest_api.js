@@ -10,7 +10,7 @@
  {
    let maRequete = new XMLHttpRequest();
    console.log(maRequete)
-   maRequete.open('GET', 'http://localhost:8080/Ex-3/wp-json/wp/v2/posts?per_page=3');
+   maRequete.open('GET', 'http://localhost:8080/TP2/wp-json/wp/v2/posts?per_page=3');
    maRequete.onload = function () {
        console.log(maRequete)
        if (maRequete.status >= 200 && maRequete.status < 400) {
@@ -44,7 +44,7 @@ bouton_ajout.addEventListener("mousedown", function(){
     }
     console.log(JSON.stringify(monArticle))
 let creerArticle=new XMLHttpRequest();
-creerArticle.open("POST",  'http://localhost:8080/Ex-3/wp-json/wp/v2/posts')
+creerArticle.open("POST",  'http://localhost:8080/TP2/wp-json/wp/v2/posts')
 creerArticle.setRequestHeader("X-WP-Nonce", monObjJS.nonce)
 creerArticle.setRequestHeader("Content-Type", "application/json;charset=UTF8-8")
 creerArticle.send(JSON.stringify(monArticle))
