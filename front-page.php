@@ -24,11 +24,11 @@ get_header();
 			<?php
 		if(is_front_page()) : ?>
 				<section class="carrousel">
-				<div><a href="http://localhost:8080/TP/category/image/">Imagerie 3D</a></div>
-				<div><a href="http://localhost:8080/TP/category/cours/">Cours</a></div>
-				<div><a href="http://localhost:8080/TP/category/jeu/">Jeu</a></div>
-				<div><a href="http://localhost:8080/TP/category/specifique/">Spécifique</a></div>
-				<div><a href="http://localhost:8080/TP/category/web/">Web</a></div>
+				<div><a href="http://localhost:8080/TP2/category/image/">Imagerie 3D</a></div>
+				<div><a href="http://localhost:8080/TP2/category/cours/">Cours</a></div>
+				<div><a href="http://localhost:8080/TP2/category/jeu/">Jeu</a></div>
+				<div><a href="http://localhost:8080/TP2/category/specifique/">Spécifique</a></div>
+				<div><a href="http://localhost:8080/TP2/category/web/">Web</a></div>
 				</section>
                 <div style="display: flex; justify-content:center;">
 				<button id='un'>I</button>
@@ -80,14 +80,15 @@ get_header();
 				$precedent = $tPropriété['typeCours'];
 			endwhile;?>
 <section class="admin-rapid" >
-<h3>Ajouter</h3>
-<input type="text" name="title" placeholder="Titre">
-<textarea name="content" placeholder="Contenu"></textarea>
-<button id="bout-rapide">Nouveau</button>
+  <h3>Ajouter</h3>
+  <input type="text" name="title" placeholder="Titre">
+  <textarea name="content" placeholder="Contenu"></textarea>
+  <button id="bout-rapide">Nouveau</button>
 </section>
 
 			</section class="accueil"> <!-- fin section cours -->
 			<section class="nouvelles">
+				<h2>Nouvelles</h2>
 			<button id="bout_nouvelles">Nouvelles du jour</button>
 			<section></section>
 			</section>
