@@ -61,7 +61,7 @@ get_header();
 		<?php if (is_active_sidebar('desc-projets')):?>
 			<?php dynamic_sidebar('desc-projets');?>
 			<?php endif;?>
-
+<h2>test</h2>
 	</main><!-- #main -->
 
 <?php

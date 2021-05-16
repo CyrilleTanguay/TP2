@@ -284,13 +284,13 @@ function extraire_cours_front_page($query){
 }
 }
 add_action('pre_get_posts','extraire_cours_front_page');
-function extraire_projet_archive($query){
+function extraire_projet_archive_de_projets($query){
 	if( !is_admin() && $query->is_archive_de_projets() && $query->is_main_query() ){
 
 	$query->set( 'category_name', 'projet' );
 	$query->set('posts_per_page', -1 );
-	$query->set('meta_key', 'type_de_cours');
+	$query->set('meta_key', 'type_de_projet');
 	$query->set('orderby', array( 'meta_value' => 'DESC', 'title' => 'ASC' ));
 }
 }
-add_action('pre_get_posts','extraire_projet_archive');
+add_action('pre_get_posts','extraire_projet_archive_de_projets');
