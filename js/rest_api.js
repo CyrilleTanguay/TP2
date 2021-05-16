@@ -1,11 +1,11 @@
 (function(){
 
-    let bouton = document.getElementById('bout_nouvelles')
+   // let bouton = document.getElementById('bout_nouvelles')
     let nouvelles = document.querySelector('.nouvelles section')
-    console.log(bouton.id)
+    //console.log(bouton.id)
 
-    bouton.addEventListener('mousedown', monAjax)
-
+   // bouton.addEventListener('mousedown', monAjax)
+window.addEventListener('load', monAjax);
     function monAjax()
  {
    let maRequete = new XMLHttpRequest();
@@ -52,7 +52,7 @@ creerArticle.onreadystatechange = function(){
     if(creerArticle.readyState == 4){
         if(creerArticle.status==201){
             document.querySelector('admin-rapid [name="title]').value = ''
-            document.querySelector('.admin.rapid [name="content]').value = ''
+            document.querySelector('.admin-rapid [name="content]').value = ''
         }
         else{
 

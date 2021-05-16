@@ -89,7 +89,7 @@ get_header();
 			</section class="accueil"> <!-- fin section cours -->
 			<section class="nouvelles">
 				<h2>Nouvelles</h2>
-			<button id="bout_nouvelles">Nouvelles du jour</button>
+			<!-- <button id="bout_nouvelles">Nouvelles du jour</button> -->
 			<section></section>
 			</section>
 		<?php endif; ?>
