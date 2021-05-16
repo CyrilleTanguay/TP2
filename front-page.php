@@ -63,7 +63,7 @@ get_header();
 					<?php endif; ?>	
 					<h2><?php echo $tPropriété['typeCours'] ?></h2>
 					<section <?php echo //(in_array($tProprieté['typeCours'], ['Web', 'Jeu']));
-					($tProprieté['typeCours']=='Web'? 'class="carrousel-2"':'class="bloc"');?>>
+							($tProprieté['typeCours']=='Web'? 'class="carrousel-2"':'class="bloc"');?>>
 				<?php endif ?>	
 
 				<?php if //(in_array
@@ -72,8 +72,8 @@ get_header();
 				 
 						get_template_part( 'template-parts/content', 'cours-carrousel' ); 
 						$chaine_bouton_radio .= '<input class="rad-carrousel"  type="radio" name="rad-carrousel">';
-				// elseif ($tProprieté['typeCours'] == 'Projet'):
-				// 	get_template_part('template-parts/content', 'galerie');
+						elseif ($tProprieté['typeCours'] == 'Projet'):
+				 		get_template_part( 'template-parts/content', 'galerie');
 						else :		
 						get_template_part( 'template-parts/content', 'cours-article' ); 
 				endif;	
@@ -108,23 +108,24 @@ get_footer();
 function convertirTableau(&$tPropriété)
 {
 	
-	$titre = get_the_title(); 
-	// 582-1W1 Mise en page Web (75h)
-	$sigle = substr($titre, 0, 7);
-	$nbHeure = substr($titre,-4,3);
-	$titrePartiel =substr($titre,8,-6);
-	$session = substr($titre, 4,1);
-	// $contenu = get_the_content();
-	// $resume = substr($contenu, 0, 200);
-	$typeCours = get_field('type_de_cours');
+	// $titre = get_the_title(); 
+	// // 582-1W1 Mise en page Web (75h)
+	// $sigle = substr($titre, 0, 7);
+	// $nbHeure = substr($titre,-4,3);
+	// $titrePartiel =substr($titre,8,-6);
+	// $session = substr($titre, 4,1);
+	// // $contenu = get_the_content();
+	// // $resume = substr($contenu, 0, 200);
+	// $typeCours = get_field('type_de_cours');
 
 
-	// $tPropriété['titre'] = get_the_title(); 
-	// $tPropriété['sigle'] = substr($tPropriété['titre'], 0, 7);
-	// $tPropriété['nbHeure'] = substr($tPropriété['titre'],-4,3);
-	// $tPropriété['titrePartiel'] = substr($tPropriété['titre'],8,-6);
-	// $tPropriété['session'] = substr($tPropriété['titre'], 4,1);
-	// $tPropriété['typeCours'] = get_field('type_de_projet');
+	 $tPropriété['titre'] = get_the_title(); 
+	 $tPropriété['sigle'] = substr($tPropriété['titre'], 0, 7);
+	 $tPropriété['nbHeure'] = substr($tPropriété['titre'],-4,3);
+	 $tPropriété['titrePartiel'] = substr($tPropriété['titre'],8,-6);
+	 $tPropriété['session'] = substr($tPropriété['titre'], 4,1);
+	 $tPropriété['typeCours'] = get_field('type_de_cours');
+	 
 }
 function genere_bouton_radio($type)
 {
