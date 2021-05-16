@@ -21,6 +21,24 @@ get_header();
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
+			<?php
+		if(is_front_page()) : ?>
+				<section class="carrousel">
+				<div><a href="http://localhost:8080/TP/category/image/">Imagerie 3D</a></div>
+				<div><a href="http://localhost:8080/TP/category/cours/">Cours</a></div>
+				<div><a href="http://localhost:8080/TP/category/jeu/">Jeu</a></div>
+				<div><a href="http://localhost:8080/TP/category/specifique/">Spécifique</a></div>
+				<div><a href="http://localhost:8080/TP/category/web/">Web</a></div>
+				</section>
+                <div style="display: flex; justify-content:center;">
+				<button id='un'>I</button>
+				<button id='deux'>C</button>
+				<button id='trois'>J</button>
+				<button id='quatre'>S</button>
+				<button id='cinq'>W</button>
+                </div>
+				<?php endif ?>
+
 			<section class="cours">
 			<?php
 			/* Start the Loop */
