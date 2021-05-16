@@ -5,6 +5,8 @@
 			//console.log(bout2.id)
 			let bout3 = document.getElementById('trois')
 			//console.log(bout3.id)
+			let bout4 = document.getElementById('quatre')
+			let bout5 = document.getElementById('cinq')
 			let carrousel = document.querySelector('.carrousel')
 			//console.log('carrousel')
 			bout1.addEventListener('mousedown',function(){
@@ -18,5 +20,13 @@
 			bout3.addEventListener('mousedown',function(){
 				//console.log(this.id)
 				carrousel.style.transform = "translateX(-200vw)"
+			})
+			bout4.addEventListener('mousedown',function(){
+				//console.log(this.id)
+				carrousel.style.transform = "translateX(-300vw)"
+			})
+			bout5.addEventListener('mousedown',function(){
+				//console.log(this.id)
+				carrousel.style.transform = "translateX(-400vw)"
 			})
 }())	

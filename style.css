@@ -1262,6 +1262,7 @@ Liste des blocs de cours par type_de_cours
   justify-content: center;
   align-items: center;
   width: 100vw;
+  flex-shrink: 0;
 }
 
 .carrousel div:nth-of-type(1) {
@@ -1274,6 +1275,14 @@ Liste des blocs de cours par type_de_cours
 
 .carrousel div:nth-of-type(3) {
   background-color: #00aeff;
+}
+
+.carrousel div:nth-of-type(4) {
+  background-color: red;
+}
+
+.carrousel div:nth-of-type(5) {
+  background-color: #ffd000;
 }
 
 /* local slider
