@@ -19,24 +19,21 @@
 		<section class="adresse">
 		</section>
 	</div>
-		<div class="site-info">
-		<!-- <//?php if (is_active_sidebar('footer-1')):?>
-			<//?php dynamic_sidebar('footer-1');?>
-			<//?php endif;?> -->
-			
-			<!-- //echo esc_url( __( 'https://wordpress.org/', 'theme4w4' ) ); -->
-			 
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				// printf( esc_html__( 'Proudly powered by %s', 'theme4w4' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				//printf( esc_html__( 'Theme: %1$s by %2$s.', 'theme4w4' ), 'theme4w4', '<a href="http://referenced.ca">eddy martin</a>' );
-				?>
-		</div><!-- .site-info -->
+<?php if(is_front_page()): ?>
+	<section class="admin-rapid" >
+  <h3>Ajouter</h3>
+  <input type="text" name="title" placeholder="Titre">
+  <textarea name="content" placeholder="Contenu"></textarea>
+  <button id="bout-rapide">Nouveau</button>
+</section>
+
+			</section class="accueil"> <!-- fin section cours -->
+			<section class="nouvelles">
+				<h2>Nouvelles</h2>
+			<!-- <button id="bout_nouvelles">Nouvelles du jour</button> -->
+			<section></section>
+			</section>
+			<?php endif; ?>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

@@ -79,19 +79,7 @@ get_header();
 				endif;	
 				$precedent = $tPropriété['typeCours'];
 			endwhile;?>
-<section class="admin-rapid" >
-  <h3>Ajouter</h3>
-  <input type="text" name="title" placeholder="Titre">
-  <textarea name="content" placeholder="Contenu"></textarea>
-  <button id="bout-rapide">Nouveau</button>
-</section>
 
-			</section class="accueil"> <!-- fin section cours -->
-			<section class="nouvelles">
-				<h2>Nouvelles</h2>
-			<!-- <button id="bout_nouvelles">Nouvelles du jour</button> -->
-			<section></section>
-			</section>
 		<?php endif; ?>
 		<?php if (is_active_sidebar('desc-cours')):?>
 			<?php dynamic_sidebar('desc-cours');?>
