@@ -75,7 +75,7 @@ get_header();
 						elseif ($tProprieté['typeCours'] == 'Projet'):
 				 		get_template_part( 'template-parts/content', 'galerie');
 						else :		
-						get_template_part( 'template-parts/content', 'cours-article' ); 
+						get_template_part( 'template-parts/content', 'article' ); 
 				endif;	
 				$precedent = $tPropriété['typeCours'];
 			endwhile;?>

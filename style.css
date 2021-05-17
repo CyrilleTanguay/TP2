@@ -1281,6 +1281,7 @@ Liste des blocs de cours par type_de_cours
   display: flex;
   transition: transform .5s;
   transform: translate(0);
+  font-size: 2em;
 }
 
 .carrousel div {
