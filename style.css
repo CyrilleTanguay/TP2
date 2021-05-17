@@ -849,6 +849,7 @@ button #cinq {
 .menu-toggle,
 .main-navigation.toggled ul {
   display: block;
+  z-index: 2;
 }
 
 /* ---------------------------------------------------------------------------
